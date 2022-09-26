@@ -1,7 +1,7 @@
 body{
     margin-left: 5%;
 }
-ol{
+li{
     font-size: 20px;
 }
 th,td{
@@ -14,5 +14,30 @@ table{
 }
 th{
     padding-bottom:12px;
-    paddin
+}
+p{
+    font-size: 20px;
+}
+.fa-youtube{
+    color:red;
+    font-size: 30px;
+}
+.fa-google-play{
+    font-size: 25px;
+    color:rgb(29, 164, 209)
+}
+span{
+    color:orangered;
+}
+.square{
+    width: 200px;
+    height: 250px;
+    background-color:lightskyblue;
+    /* transition: width 2s ease-in-out .5s; */
+    transition: bacground 2s, transform 2s;
+}
+.square:hover{
+    width:575px; 
+   background-image: linear-gradient(orange,red);
+   transform: rotate(180deg);
 }

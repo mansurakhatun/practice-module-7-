@@ -1,5 +1,6 @@
 body{
     margin-left: 5%;
+    margin-right: 5%;
 }
 li{
     font-size: 20px;
@@ -30,14 +31,62 @@ span{
     color:orangered;
 }
 .square{
-    width: 200px;
+    width: 350px;
     height: 250px;
     background-color:lightskyblue;
-    /* transition: width 2s ease-in-out .5s; */
+    transition: width 5s;
     transition: bacground 2s, transform 2s;
+    
 }
 .square:hover{
     width:575px; 
    background-image: linear-gradient(orange,red);
+   transition: 2s;
    transform: rotate(180deg);
+}
+.flexible{
+    display: flex;
+}
+.moving-area{
+    width:1500px;
+    height:300px;
+    background-color:lightgreen;
+  }
+  img{
+    width: 80px;
+    height:80px;
+    border-radius:50%;
+    position:relative;
+    animation: sliding 5s;
+    animation-play-state:running;
+    animation-name: sliding-vertically;
+    animation-iteration-count: infinite;
+  /* animation-duration: 4s;
+  animation-delay: -2s; */
+  }
+@keyframes sliding-vertically{
+    0%{ background-color: brown;
+        top: 0px;
+        left: 0px;
+    }
+   25%{
+    background-color: cyan;
+    top: 220px;
+    left: 250px;
+   } 
+   50%{
+    background-color: crimson;
+    top:0;
+    left: 500px;
+   }
+   75%{
+    background-color:purple;
+    top: 220px;
+    left: 750px;
+   }
+   100%{
+    background-color: darkorange;
+    top: 0;
+    left: 1000px;
+   }
 }
